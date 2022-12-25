@@ -1,7 +1,7 @@
 set(PROJECT TestXMLSS)
 
 set(SOURCES
-        TestXMLSS.cc
+    TestXMLSS.cc
 )
 
 include_directories(../../xmlss_hdr)
