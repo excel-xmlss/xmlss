@@ -16,7 +16,7 @@ target_link_libraries(${PROJECT}
 
 set(PROJECT DummyExecutable)
 
-add_executable(${PROJECT} ${SRCCS})
+add_executable(${PROJECT} ${SRCS})
 
 target_link_libraries(${PROJECT}
     PUBLIC

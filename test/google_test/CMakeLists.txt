@@ -6,7 +6,9 @@ set(SOURCES
 
 include_directories(../../xmlss_hdr)
 
-add_executable(${PROJECT} ${SOURCES}
+add_executable(${PROJECT} ${SOURCES})
+
+target_link_libraries(${PROJECT}
     PUBLIC
          XMLSS
          gtest
@@ -18,5 +20,5 @@ add_executable(${PROJECT} ${SOURCES}
 
 add_test(
     NAME ${PROJECT}
-   COMMAND ${PROJECT}
+    COMMAND ${PROJECT}
 )
