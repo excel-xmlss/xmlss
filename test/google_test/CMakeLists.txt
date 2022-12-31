@@ -1,10 +1,12 @@
 set(PROJECT TestXMLSS)
 
 set(SOURCES
-    TestXMLSS.cc
+    TestOrange_XMLSS.cc
 )
 
-include_directories(../../xmlss_hdr)
+add_compile_options(-O0 -fprofile-arcs -ftest-coverage)
+
+include_directories(../../orange_xmlss)
 
 add_executable(${PROJECT} ${SOURCES})
 

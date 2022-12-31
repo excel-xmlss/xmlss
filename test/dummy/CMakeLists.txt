@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.8)
 
 set(PROJECT XMLSS)
 
-add_compile_options(-fprofile-arcs -ftest-coverage)
+#add_compile_options(-fprofile-arcs -ftest-coverage)
 
-include_directories(../../xmlss_hdr)
+include_directories(../../orange_xmlss)
 file(GLOB SRCS ${CMAKE_CURRENT_SOURCE_DIR}/*.cc)
 
 add_library(${PROJECT} STATIC ${SRCS})
